@@ -19,7 +19,10 @@ fn main() {
 
     let (month, day) = get_easter_date(year);
 
-    println!("{}/{}/{}", year, month, day);
+    println!("Easter Sunday will be on {} {} in {}.",
+        if month == 3 { "March" } else { "April" },
+        day,
+        year);
 }
 
 // This function is f-cking ridiculous. No human should ever have
